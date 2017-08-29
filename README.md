@@ -41,4 +41,12 @@ i.e. using know technologies and third party utils
  and an [XP](https://en.wikipedia.org/wiki/Extreme_programming) approach to fulfill the 
  business logic as efficiently as possible.
 
- 
+#### Getting Started
+
+##### Tests
+
+Jasmine must be installed globally:
+
+`npm install -g jasmine`
+
+Run tests via `npm test`
