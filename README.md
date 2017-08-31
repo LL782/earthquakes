@@ -29,24 +29,36 @@ Create two inputs with buttons:
 2. Text Input with button to filter by magtype
 
 
-## Notes on approach taken
+## Notes on two approaches
 
 ### Solution 1
 
 A quick solution taking the path of least resistance,
-i.e. using know technologies and third party utils
+i.e. using know technologies and third party utils.
 
 - Use [Create React App](https://facebook.github.io/react/docs/installation.html) to get started 
 - Use [TDD](https://technologyconversations.com/2014/09/30/test-driven-development-tdd/) 
- and an [XP](https://en.wikipedia.org/wiki/Extreme_programming) approach to fulfill the 
- business logic as efficiently as possible.
+ and an [XP](https://en.wikipedia.org/wiki/Extreme_programming) approach to fulfill the business logic as efficiently as possible.
 
-#### Getting Started
+TODO:
 
-##### Tests
+- Improve test coverage:
+    - Assert that fetch is being called with the correct endpoint
+    - Test scenarios when data returned is:
+        + Successful
+        + Has errors
+        + Is empty
+        + Is in unexpected format
 
-Jasmine must be installed globally:
+- Properly handle errors caught from API call
+- Introduce propTypes
 
-`npm install -g jasmine`
 
-Run tests via `npm test`
+### Solution 2
+
+- Don't use Create React App
+- Incorporate my favourite React tooling
+- Try Jest for unit tests
+- (Maybe) Demonstrate state handling using Redux (although it doesn't seem to warrent it)
+- Use smaller more descriptive components
+- Separate data calling service from UI
