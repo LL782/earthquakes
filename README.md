@@ -42,15 +42,15 @@ i.e. using know technologies and third party utils.
 
 TODO:
 
-- Improve test coverage:
+- ~Improve test coverage:~
     - ~Assert that fetch is being called with the correct endpoint~
     - Test scenarios when data returned is:
         + ~Successful~
-        + Has errors
-        + Is empty
+        + ~Has errors~
+        + ~Is empty~
         + Is in unexpected format
 
-- Properly handle errors caught from API call
+- ~Properly handle errors caught from API call~
 - Introduce propTypes
 
 

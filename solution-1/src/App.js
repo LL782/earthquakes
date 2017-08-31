@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import { quakesEndpoint } from './config/endpoints';
 // import fetch from 'isomorphic-fetch';  // TODO: import without causing specs to fail
 
-const endpoint = 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2014-01-01&endtime=2014-01-02';
 
 const Quake = ({ id, place, mag, magType}) => (
   <li key={id}>
@@ -22,13 +22,11 @@ const formatData = (quake) => ({
   magType: quake.properties.magType
 });
 
+const handleJson = json => json ? json.features.map(formatData) : []
+
 const handleResponse = (response) => {
   return response.json()
-  .then( json => json.features.map(formatData) )
-};
-
-const logError = (error) => {
-  console.log('error: ', error);
+  .then( handleJson )
 };
 
 class App extends Component {
@@ -43,10 +41,16 @@ class App extends Component {
   }
 
   fetchQuakeData() {
-    return fetch(endpoint)
+    return fetch(quakesEndpoint)
     .then(handleResponse)
     .then((quakes) => this.setState( { quakes: quakes } ))
-    .catch(logError);
+    .catch(this.handleError);
+
+
+  }
+
+  handleError(error) {
+    // ADD ERROR LOGGING HERE
   }
 
   render() {
