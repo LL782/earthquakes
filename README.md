@@ -43,9 +43,9 @@ i.e. using know technologies and third party utils.
 TODO:
 
 - Improve test coverage:
-    - Assert that fetch is being called with the correct endpoint
+    - ~Assert that fetch is being called with the correct endpoint~
     - Test scenarios when data returned is:
-        + Successful
+        + ~Successful~
         + Has errors
         + Is empty
         + Is in unexpected format
