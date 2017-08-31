@@ -38,3 +38,7 @@ e.g.
   |--(Scenario) When thing B happens
     |-- It does some other thing
 ```
+
+### TODO
+
+* Use 'mock-fetch' in spec and 'isomorphic-fetch' in src.

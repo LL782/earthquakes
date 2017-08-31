@@ -1,4 +1,4 @@
-// import fetch from 'isomorphic-fetch';
+// import fetch from 'isomorphic-fetch'; // TODO: use 'fetch-mock' in unit tests then uncomment this
 import { quakesEndpoint } from '../config/endpoints';
 import { formatData } from '../models';
 
