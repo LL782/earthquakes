@@ -60,5 +60,5 @@ TODO:
 - Incorporate my favourite React tooling
 - Try Jest for unit tests
 - (Maybe) Demonstrate state handling using Redux (although it doesn't seem to warrent it)
-- Use smaller more descriptive components
-- Separate data calling service from UI
+- ~Use smaller more descriptive components~
+- ~Separate data calling service from UI~
