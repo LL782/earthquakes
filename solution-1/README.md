@@ -1,6 +1,17 @@
 # Solution 1
 
+
 ## Working notes
+
+
+### Running the app
+
+```
+cd solution-1
+npm install
+npm start
+```
+
 
 ### Tests
 
