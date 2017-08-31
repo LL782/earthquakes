@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import fetch from 'isomorphic-fetch';
 import App from './App';
-import stubbedResponses from '../spec/helpers/stubbedResponses';
-import fakeSetState from '../spec/helpers/fakeSetState';
-import expectedFormat from '../spec/helpers/expectedFormat';
-import { quakesEndpoint } from '../src/config/endpoints';
+import stubbedResponses from '../../spec/helpers/stubbedResponses';
+import fakeSetState from '../../spec/helpers/fakeSetState';
+import expectedFormat from '../../spec/helpers/expectedFormat';
+import { quakesEndpoint } from '../../src/config/endpoints';
 
 let component;
 
@@ -38,7 +38,7 @@ describe('(Component) App', () => {
     });
   });
 
-  describe('(Scenario) when the earthquake API call fails', () => {
+  describe('(Scenario) the earthquake API call fails', () => {
 
     beforeEach((done) => {
       spyOn(global, 'fetch').and.returnValue(stubbedResponses.failure);
