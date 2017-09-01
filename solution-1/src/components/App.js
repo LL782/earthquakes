@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Quakes from '../components/Quakes';
+import EmptyList from '../components/EmptyList';
 import Filter from '../components/Filter';
 import { fetchQuakes, parseQuakes } from '../services/quakes';
 
@@ -51,6 +52,7 @@ class App extends Component {
           setQuakes={this.setQuakes}
         />
         <Quakes quakes={this.state.quakes} />
+        <EmptyList quakes={this.state.quakes} />
       </div>
     );
   }
