@@ -1,4 +1,4 @@
-# Earthquake List - Technical exercise (WIP)
+# Earthquake List
 
 ## The brief
 
@@ -33,32 +33,33 @@ Create two inputs with buttons:
 
 ### Solution 1
 
-A quick solution taking the path of least resistance,
-i.e. using know technologies and third party utils.
+Intention: Quick approach without too much concern for tooling and the 
+structure of that app beyond the component itself.
 
-- Use [Create React App](https://facebook.github.io/react/docs/installation.html) to get started 
+- Use [Create React App](https://facebook.github.io/react/docs/installation.html) to get started quickly
 - Use [TDD](https://technologyconversations.com/2014/09/30/test-driven-development-tdd/) 
  and an [XP](https://en.wikipedia.org/wiki/Extreme_programming) approach to fulfill the business logic as efficiently as possible.
 
-TODO:
+#### Still to do:
 
-- ~Improve test coverage:~
-    - ~Assert that fetch is being called with the correct endpoint~
-    - Test scenarios when data returned is:
-        + ~Successful~
-        + ~Has errors~
-        + ~Is empty~
-        + Is in unexpected format
+- Improve test coverage 
+    - around the filters
+    - around data being returned in unexpected format
 
-- ~Properly handle errors caught from API call~
 - Introduce propTypes
 
 
 ### Solution 2
 
-- Don't use Create React App
-- Incorporate my favourite React tooling
-- Try Jest for unit tests
-- (Maybe) Demonstrate state handling using Redux (although it doesn't seem to warrent it)
-- ~Use smaller more descriptive components~
-- ~Separate data calling service from UI~
+Intention: A more carefully crafted app, some exploration into 
+technology which is less familiar and more time setting up tooling to 
+encourage best practice and consistent and high quality code.
+
+- Don't use Create React App (configure Babel, Webpack and NPM scripts)
+- Incorporate tooling that encourages best practice (e.g. ESLint, AirBnb rules)
+- (Try) Jest for unit tests
+- (Maybe) Demonstrate state handling using Redux -- although there's not enough complexity to really warrent it
+
+#### Still to do
+
+**Solution 2 has not been started*
