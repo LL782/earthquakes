@@ -1,19 +1,16 @@
-// import fetch from 'isomorphic-fetch'; // TODO: use 'fetch-mock' in unit tests then uncomment this
+// import fetch from 'isomorphic-fetch';
 import { quakesEndpoint } from '../config/endpoints';
 import { formatData } from '../models';
 
 const fetchQuakes = () => fetch(quakesEndpoint);
 
-const parseQuakes = (response) => {
-  return response.json()
-  .then(json => {
-
+const parseQuakes = response => response.json()
+  .then((json) => {
     let quakes = [];
-    if(json && json.features) {
+    if (json && json.features) {
       quakes = json.features.map(formatData);
     }
-    return quakes
-  })
-};
+    return quakes;
+  });
 
 export { fetchQuakes, parseQuakes };

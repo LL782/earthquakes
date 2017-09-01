@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import fetch from 'isomorphic-fetch';
 import App from './App';
 import stubbedResponses from '../../spec/helpers/stubbedResponses';
@@ -10,7 +8,6 @@ import { quakesEndpoint } from '../../src/config/endpoints';
 let component;
 
 describe('(Component) App', () => {
-
   beforeEach(() => {
     component = new App();
     spyOn(component, 'setState').and.callFake(fakeSetState).bind(component);
@@ -18,15 +15,12 @@ describe('(Component) App', () => {
   });
 
   describe('(Scenario) before it loads', () => {
-
     it('it has an empty list of quakes', () => {
       expect(component.state).toEqual({ quakes: [] });
     });
-
   });
 
   describe('(Scenario) when it loads', () => {
-
     beforeEach((done) => {
       spyOn(global, 'fetch').and.returnValue(stubbedResponses.empty);
       component.componentDidMount();
@@ -39,7 +33,6 @@ describe('(Component) App', () => {
   });
 
   describe('(Scenario) the earthquake API call fails', () => {
-
     beforeEach((done) => {
       spyOn(global, 'fetch').and.returnValue(stubbedResponses.failure);
       component.componentDidMount();
@@ -49,11 +42,9 @@ describe('(Component) App', () => {
     it('it logs the error', () => {
       expect(component.handleError).toHaveBeenCalledWith('{ERROR_RESPONSE}');
     });
-
   });
 
   describe('(Scenario) the earthquake API call returns successfully', () => {
-
     beforeEach((done) => {
       spyOn(global, 'fetch').and.returnValue(stubbedResponses.success);
       component.componentDidMount();
@@ -65,5 +56,4 @@ describe('(Component) App', () => {
     });
   });
 });
-
 
