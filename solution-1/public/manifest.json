@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Earthquake List",
+  "name": "Earthquake List - Technical Exercise",
   "icons": [
     {
       "src": "favicon.ico",
