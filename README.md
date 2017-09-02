@@ -74,3 +74,15 @@ encourage best practice and consistent and high quality code.
 - Consider publishing build versions of both solutions to GitHub pages.
     + Move each solution to it's own repo
     + Provide links to repos and Git Hub pages from this repo.
+
+---
+
+### Compare the two solutions
+
+#### Setup of the React app
+
+1. In `solution-1` I use Create React App which gives a lot for free, such as an optimised build process, the service worker for caching files and speeding up production and hot reloading for speeding up development. 
+
+  In `solution-2` I setup without Create React App, in order to have greater control and **understanding** of every aspect of the setup.
+
+1. In `solution-2` I spent time ensuring `eslint` with the `airbnb rules` was in place. This is highly beneficial for code quality and consistency.
