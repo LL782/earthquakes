@@ -14,9 +14,11 @@
 Use the following endpoint:
 https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2014-01-01&endtime=2014-01-02
 
-The list should display: 
+The list items should display in the following format
 
-Id: place: mag: magType .eg
+`Id: place: mag: magType`
+
+e.g.
 
 ```
 - Ak10992887: 117km NW of Talkeetna, Alaska : 1.1 : ml
@@ -39,6 +41,7 @@ structure of that app beyond the component itself.
 - Use [Create React App](https://facebook.github.io/react/docs/installation.html) to get started quickly
 - Use [TDD](https://technologyconversations.com/2014/09/30/test-driven-development-tdd/) 
  and an [XP](https://en.wikipedia.org/wiki/Extreme_programming) approach to fulfill the business logic as efficiently as possible.
+- Don't worry about PropTypes (interesting talking point)
 
 #### Still to do:
 
@@ -46,7 +49,7 @@ structure of that app beyond the component itself.
     - around the filters
     - around data being returned in unexpected format
 
-- Introduce propTypes
+- Import `isomorphic-fetch` and mock 
 
 
 ### Solution 2
@@ -55,11 +58,19 @@ Intention: A more carefully crafted app, some exploration into
 technology which is less familiar and more time setting up tooling to 
 encourage best practice and consistent and high quality code.
 
-- Don't use Create React App (configure Babel, Webpack and NPM scripts)
+- Configure Babel, Webpack and NPM scripts from scratch (don't use create-react-app)
 - Incorporate tooling that encourages best practice (e.g. ESLint, AirBnb rules)
 - (Try) Jest for unit tests
 - (Maybe) Demonstrate state handling using Redux -- although there's not enough complexity to really warrent it
 
 #### Still to do
 
-**Solution 2 has not been started*
+*Solution 2 has not been started*
+
+---
+
+### Still to do both both solutions
+
+- Consider publishing build versions of both solutions to GitHub pages.
+    + Move each solution to it's own repo
+    + Provide links to repos and Git Hub pages from this repo.
