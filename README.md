@@ -35,7 +35,11 @@ Create two inputs with buttons:
 
 ### Solution 1
 
-#### Setup
+#### Web view
+
+[http://laurencelord.co.uk/sandbox/earthquake-solution-1/](http://laurencelord.co.uk/sandbox/earthquake-solution-1/)
+
+#### Local Setup
 
 ```
 git clone https://github.com/LL782/earthquakes.git
@@ -60,9 +64,11 @@ structure of that app beyond the component itself.
 
 ### Solution 2
 
-[laurencelord.co.uk/.../earthquake-solution-2/](http://laurencelord.co.uk/sandbox/earthquake-solution-2/)
+#### Web view
 
-#### Setup
+[http://laurencelord.co.uk/sandbox/earthquake-solution-2/](http://laurencelord.co.uk/sandbox/earthquake-solution-2/)
+
+#### Local Setup
 
 ```
 git clone https://github.com/LL782/earthquakes.git
