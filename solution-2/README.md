@@ -37,3 +37,8 @@ To watch for file changes and rebuild the app:
 Check JS/JSX file in `src/` against [airbnb](https://github.com/airbnb/javascript) rules: 
 
 `yarn lint` or `npm run lint`
+
+
+---
+
+For discussion of the solution please see [the README in the root of this repo](https://github.com/LL782/earthquakes)

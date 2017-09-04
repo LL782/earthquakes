@@ -35,6 +35,12 @@ Create two inputs with buttons:
 
 ### Solution 1
 
+```
+cd solution-1
+npm install
+npm start
+```
+
 Intention: Quick approach without too much concern for tooling and the 
 structure of that app beyond the component itself.
 
@@ -43,46 +49,45 @@ structure of that app beyond the component itself.
  and an [XP](https://en.wikipedia.org/wiki/Extreme_programming) approach to fulfill the business logic as efficiently as possible.
 - Don't worry about PropTypes (interesting talking point)
 
-#### Still to do:
-
-- Improve test coverage 
-    - around the filters
-    - around data being returned in unexpected format
-
-- Import `isomorphic-fetch` and mock 
+[Full instruction in the solution-1 directory](./tree/master/solution-1)
 
 
 ### Solution 2
 
+```
+cd solution-2
+npm install
+npm run dist
+```
+
 Intention: A more carefully crafted app, some exploration into 
 technology which is less familiar and more time setting up tooling to 
-encourage best practice and consistent and high quality code.
+encourage best practice and consistent, high quality code.
 
 - Configure Babel, Webpack and NPM scripts from scratch (don't use create-react-app)
-- Incorporate tooling that encourages best practice (e.g. ESLint, AirBnb rules)
-- (Try) Jest for unit tests
-- (Maybe) Demonstrate state handling using Redux -- although there's not enough complexity to really warrent it
+- Incorporate tooling that encourages best practice (e.g. [eslint](eslint.org), [airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) rules)
+- (Try) [Jest](http://facebook.github.io/jest/) and [Enzyme](http://airbnb.io/enzyme/) for unit tests React components.
 
-#### Still to do
-
-*Solution 2 has not been started*
-
----
-
-### Still to do both both solutions
-
-- Consider publishing build versions of both solutions to GitHub pages.
-    + Move each solution to it's own repo
-    + Provide links to repos and Git Hub pages from this repo.
+[Full instruction in the solution-2 directory](./tree/master/solution-2)
 
 ---
 
 ### Compare the two solutions
 
+#### Differences between the components
+
+- `solution-1` has few component files and everything in on directory
+  
+  `solution-2` places each components in it's own directory (tests, snapshots and styles would be places alongside the source files)
+
+
+
+1. 
+
 #### Setup of the React app
 
-1. In `solution-1` I use Create React App which gives a lot for free, such as an optimised build process, the service worker for caching files and speeding up production and hot reloading for speeding up development. 
+- In `solution-1` I use Create React App which gives a lot for free, such as an optimised build process, the service worker for caching files and speeding up production and hot reloading for speeding up development. 
 
   In `solution-2` I setup without Create React App, in order to have greater control and **understanding** of every aspect of the setup.
 
-1. In `solution-2` I spent time ensuring `eslint` with the `airbnb rules` was in place. This is highly beneficial for code quality and consistency.
+- In `solution-2` I spent time ensuring `eslint` with the `airbnb rules` was in place. This is highly beneficial for code quality and consistency.
