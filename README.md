@@ -1,4 +1,4 @@
-# Earthquake List
+# Earthquake Lister
 
 ## The brief
 
@@ -31,15 +31,13 @@ Create two inputs with buttons:
 2. Text Input with button to filter by magtype
 
 
-## Notes on two approaches
+## Solution 1
 
-### Solution 1
-
-#### Web view
+### Web view
 
 [http://laurencelord.co.uk/sandbox/earthquake-solution-1/](http://laurencelord.co.uk/sandbox/earthquake-solution-1/)
 
-#### Local Setup
+### Local Setup
 
 ```
 git clone https://github.com/LL782/earthquakes.git
@@ -51,7 +49,7 @@ yarn start
 [Full instruction in the solution-1 directory](./tree/master/solution-1)
 
 
-#### Intentions
+### Intentions
 
 Quick approach without too much concern for tooling and the 
 structure of that app beyond the component itself.
@@ -62,13 +60,13 @@ structure of that app beyond the component itself.
 - Don't worry about PropTypes (interesting talking point)
 
 
-### Solution 2
+## Solution 2
 
-#### Web view
+### Web view
 
 [http://laurencelord.co.uk/sandbox/earthquake-solution-2/](http://laurencelord.co.uk/sandbox/earthquake-solution-2/)
 
-#### Local Setup
+### Local Setup
 
 ```
 git clone https://github.com/LL782/earthquakes.git
@@ -79,7 +77,7 @@ yarn dist
 
 [Full instruction in the solution-2 directory](./tree/master/solution-2)
 
-#### Intention
+### Intention
 
 A more carefully crafted app, some exploration into 
 technology which is less familiar and more time setting up tooling to 
@@ -91,10 +89,10 @@ encourage best practice and consistent, high quality code.
 
 ---
 
-### Compare the two solutions
+## Compare the two solutions
 
 
-#### Both
+### Both
 
 Clear seperation between UI, business models, data services and config. 
 
@@ -105,14 +103,14 @@ All files are kept short and sweet with named functions and objects.
 Clean, human-readable code. Take a look!
 
 
-#### Solution 1
+### Solution 1
 
 `solution-1` has few component files and everything in one directory. It is especially quick and easy to read and understand. However, the components are lacking [prop-types](https://www.npmjs.com/package/prop-types) and there are no linting rules in place to enforce code consistency.
 
 I setup with [Create React App](https://github.com/facebookincubator/create-react-app) which gives a lot for free, such as an optimised build process, the service worker for caching files and hot reloading for speeding up development.
 
 
-#### Solution 2
+### Solution 2
   
 `solution-2` has each components in it's own directory with room for test files and other related files to be included along side them. The components have names like `QuakeList` and `QuakeListItem` so they wouldn't get lost if the Earth Quake lister was included with other UI features.
 
