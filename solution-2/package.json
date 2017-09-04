@@ -2,14 +2,16 @@
   "name": "earthquakes-lister-solution-2",
   "version": "1.0.0",
   "description": "A simple React Component that loads earthquake data and offers simple filtering.",
-  "repository" : { 
-    "type" : "git", 
-    "url" : "https://github.com/LL782/earthquakes.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LL782/earthquakes.git"
   },
   "main": "src/app.jsx",
   "scripts": {
     "dist": "webpack && open dist/index.html",
     "lint": "eslint src --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "watch": "webpack --watch"
   },
   "author": "Laurence Lord <laurence@laurencelord.co.uk> (http://laurencelord.co.uk/)",
@@ -17,18 +19,24 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "enzyme": "^2.9.1",
     "eslint": "^4.6.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
-    "html-loader": "^0.5.1"
+    "jest": "^20.0.4",
+    "jest-cli": "^20.0.4",
+    "react-test-renderer": "^15.6.1"
   },
   "dependencies": {
     "html-webpack-plugin": "^2.30.1",
+    "isomorphic-fetch": "^2.2.1",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "webpack": "^3.5.5"
