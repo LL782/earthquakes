@@ -39,9 +39,9 @@ Create two inputs with buttons:
 
 ```
 git clone https://github.com/LL782/earthquakes.git
-cd solution-1
-npm install
-npm start
+cd earthquakes/solution-1
+yarn install
+yarn start
 ```
 
 [Full instruction in the solution-1 directory](./tree/master/solution-1)
@@ -64,9 +64,9 @@ structure of that app beyond the component itself.
 
 ```
 git clone https://github.com/LL782/earthquakes.git
-cd solution-2
-npm install
-npm run dist
+cd earthquakes/solution-2
+yarn install
+yarn dist
 ```
 
 [Full instruction in the solution-2 directory](./tree/master/solution-2)
@@ -85,32 +85,32 @@ encourage best practice and consistent, high quality code.
 
 ### Compare the two solutions
 
-#### Differences between the components
 
-
-##### Solution 1
-
-`solution-1` has few component files and everything in one directory. It is especially quick and easy to ready and understand. However, the components are lacking [prop-types](https://www.npmjs.com/package/prop-types) and there are no linting rules in place to enforce code consistency.
-
-I setup with [Create React App](https://github.com/facebookincubator/create-react-app) which gives a lot for free, such as an optimised build process, the service worker for caching files and hot reloading for speeding up development.
-
-
-##### Solution 2
-  
-`solution-2` has each components in it's own directory with room for test files and other related files to be included along side them. The components have names like `QuakeList` and `QuakeListItem` so they wouldn't get lost if the Earth Quake lister was included with other UI features.
-
-I setup without Create React App, for greater control and understanding of every aspect of the setup.
-
-`eslint` with the `airbnb rules` ensure better code quality and consistency.
-
-
-##### Both
+#### Both
 
 Clear seperation between UI, business models, data services and config. 
 
 Each component has it's own file.
 
 All files are kept short and sweet with named functions and objects.
+
+Clean, human-readable code. Take a look!
+
+
+#### Solution 1
+
+`solution-1` has few component files and everything in one directory. It is especially quick and easy to read and understand. However, the components are lacking [prop-types](https://www.npmjs.com/package/prop-types) and there are no linting rules in place to enforce code consistency.
+
+I setup with [Create React App](https://github.com/facebookincubator/create-react-app) which gives a lot for free, such as an optimised build process, the service worker for caching files and hot reloading for speeding up development.
+
+
+#### Solution 2
+  
+`solution-2` has each components in it's own directory with room for test files and other related files to be included along side them. The components have names like `QuakeList` and `QuakeListItem` so they wouldn't get lost if the Earth Quake lister was included with other UI features.
+
+I setup without Create React App, for greater control and understanding of every aspect of the setup.
+
+`eslint` with the `airbnb rules` assist with ensuring great code quality and consistency.
 
 ---
 
