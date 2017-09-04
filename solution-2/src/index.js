@@ -2,8 +2,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import QuakeLister from './components/QuakeLister.jsx';
+import QuakesLister from './components/QuakesLister';
 
 const mountNode = document.createElement('div');
 document.body.appendChild(mountNode);
-ReactDOM.render(<QuakeLister />, mountNode);
+ReactDOM.render(<QuakesLister />, mountNode);
