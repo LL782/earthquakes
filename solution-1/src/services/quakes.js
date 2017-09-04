@@ -1,10 +1,10 @@
-// import fetch from 'isomorphic-fetch';
+import 'isomorphic-fetch';
 import { quakesEndpoint } from '../config/endpoints';
 import { formatData } from '../models';
 
 const fetchQuakes = () => fetch(quakesEndpoint);
 
-const parseQuakes = response => response.json()
+const parseQuakes = (response, reject) => response.json()
   .then((json) => {
     let quakes = [];
     if (json && json.features) {
