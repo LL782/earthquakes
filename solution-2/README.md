@@ -44,4 +44,4 @@ Check JS/JSX file in `src/` against [airbnb](https://github.com/airbnb/javascrip
 
 ---
 
-For discussion of the solution please see [the README in the root of this repo](https://github.com/LL782/earthquakes)
+More notes on both solution are in the README in the [root of this repo](https://github.com/LL782/earthquakes)

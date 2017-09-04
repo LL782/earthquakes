@@ -1,10 +1,6 @@
 # Solution 1
 
-
-## Working notes
-
-
-### Running the app
+## Running the app
 
 ```
 cd solution-1
@@ -13,7 +9,7 @@ npm start
 ```
 
 
-### Tests
+## Tests
 
 Jasmine must be installed globally:
 
@@ -21,7 +17,7 @@ Jasmine must be installed globally:
 
 Run tests via `npm test`
 
-#### Unit test structure
+### Unit test structure
 
 Tests _describe_ `(Components)`, `(Scenarios)` and `(Methods)`.
 The language in the _describes_ and _its_ follows the business language
@@ -39,10 +35,10 @@ e.g.
     |-- It does some other thing
 ```
 
-### TODO
-
-* Use 'mock-fetch' in spec and 'isomorphic-fetch' in src.
-
 ---
 
 [http://laurencelord.co.uk/sandbox/earthquake-solution-1/](http://laurencelord.co.uk/sandbox/earthquake-solution-1/)
+
+---
+
+More notes on both solution are in the README in the [root of this repo](https://github.com/LL782/earthquakes)
