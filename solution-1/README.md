@@ -42,3 +42,7 @@ e.g.
 ### TODO
 
 * Use 'mock-fetch' in spec and 'isomorphic-fetch' in src.
+
+---
+
+[http://laurencelord.co.uk/sandbox/earthquake-solution-1/](http://laurencelord.co.uk/sandbox/earthquake-solution-1/)

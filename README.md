@@ -46,7 +46,7 @@ yarn install
 yarn start
 ```
 
-[Full instruction in the solution-1 directory](./tree/master/solution-1)
+[Full instruction in the solution-1 directory](https://github.com/LL782/earthquakes/tree/master/solution-1)
 
 
 ### Intentions
@@ -75,7 +75,7 @@ yarn install
 yarn dist
 ```
 
-[Full instruction in the solution-2 directory](./tree/master/solution-2)
+[Full instruction in the solution-2 directory](https://github.com/LL782/earthquakes/tree/master/solution-2)
 
 ### Intention
 
