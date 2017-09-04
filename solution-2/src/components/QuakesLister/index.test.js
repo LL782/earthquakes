@@ -59,16 +59,3 @@ describe('(Component) The Quakes Lister', () => {
     });
   });
 });
-
-
-//   describe('(Scenario) the earthquake API call fails', () => {
-//     beforeEach((done) => {
-//       spyOn(global, 'fetch').and.returnValue(stubbedResponses.failure);
-//       component.componentDidMount();
-//       done();
-//     });
-
-//     it('it logs the error', () => {
-//       expect(component.handleError).toHaveBeenCalledWith('{ERROR_RESPONSE}');
-//     });
-//   });
