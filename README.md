@@ -60,6 +60,8 @@ structure of that app beyond the component itself.
 
 ### Solution 2
 
+[laurencelord.co.uk/.../earthquake-solution-2/](http://laurencelord.co.uk/sandbox/earthquake-solution-2/)
+
 #### Setup
 
 ```
