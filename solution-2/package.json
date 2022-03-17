@@ -1,5 +1,6 @@
 {
   "name": "earthquakes-lister-solution-2",
+  "homepage": "https://www.laurencelord.co.uk/sandbox/earthquake-solution-2/",
   "version": "1.0.0",
   "description": "A simple React Component that loads earthquake data and offers simple filtering.",
   "repository": {
